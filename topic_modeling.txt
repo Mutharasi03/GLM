@@ -1,0 +1,34 @@
+This project performs topic modeling on a dataset of BBC News articles using Latent Dirichlet Allocation (LDA). 
+The workflow includes preprocessing the data, visualizing word clouds, and finding the optimal number of topics using coherence scores.
+The results are visualized using pyLDAvis.
+
+Requirements :
+Before running the program, ensure you have the following Python packages installed:
+pandas
+numpy
+matplotlib
+wordcloud
+gensim
+nltk
+pyLDAvis
+
+Dataset:
+The dataset used in this project is a CSV file named BBCNews.csv, which contains BBC News articles with the following columns:
+
+descr: Article description
+tags: Tags associated with the article
+
+Usage:
+
+Load and Preprocess Data:
+The program reads the dataset and performs basic preprocessing, including removing punctuation and converting text to lowercase.
+
+Preprocess Text for LDA:
+The text data is tokenized, and stopwords are removed. This processed text is then converted into a format suitable for LDA.
+
+Determine Optimal Number of Topics:
+The program calculates coherence scores for different numbers of topics to determine the optimal number.
+
+Train and Display LDA Model
+The LDA model is trained with the selected number of topics, and the topics are displayed.
+
