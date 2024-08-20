@@ -1,0 +1,41 @@
+Text Processing and Clustering Analysis
+Overview
+This project demonstrates text preprocessing, similarity measurement, and clustering techniques applied to a set of sample sentences. 
+The analysis involves different text representation methods (TF-IDF and Bag of Words) and clustering algorithms (K-Means) to uncover patterns and relationships within the data.
+
+Project Structure: 
+
+Text Preprocessing: Steps to clean and prepare the text data.
+Similarity Measures: Calculation of cosine similarity and Euclidean distance.
+Text Embedding: Conversion of text to numerical vectors using TF-IDF and Bag of Words.
+Clustering: Application of K-Means clustering and evaluation using silhouette score and Dunn Index.
+Visualization: PCA for dimensionality reduction and scatter plots to visualize clusters.
+
+Requirements:
+numpy
+scipy
+scikit-learn
+matplotlib
+seaborn
+nltk
+spacy
+
+Text Preprocessing:
+The preprocess function cleans and tokenizes the input sentences by converting them to lowercase, removing numbers and punctuation, and filtering out stop words.
+
+Text Embedding:
+TF-IDF Vectorization: Converts sentences to TF-IDF vectors.
+Bag of Words: Converts sentences to word frequency vectors.
+Similarity Measures:
+
+Cosine Similarity-Measures the cosine of the angle between TF-IDF vectors.
+Euclidean Distance-Computes pairwise Euclidean distances between TF-IDF and Bag of Words vectors, converted to similarity scores.
+
+Clustering:
+K-Means Clustering: Applies K-Means clustering on both TF-IDF and Bag of Words representations.
+Silhouette Score: Evaluates the quality of clustering.
+Dunn Index: Measures the clustering quality by considering the ratio of intercluster to intracluster distances.
+
+Visualization:
+PCA: Reduces the dimensionality of TF-IDF vectors for visualization.
+Scatter Plot: Displays clusters using principal components.
