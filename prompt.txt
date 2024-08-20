@@ -1,0 +1,22 @@
+Text Classification and Reasoning Using Transformers
+Overview:
+This project demonstrates the use of transformer-based models for text classification and reasoning. It includes examples of zero-shot classification, one-shot classification, and chain of thought (CoT) reasoning using Hugging Face's transformers library. The examples provided cover classifying sentiments of texts and reasoning through given statements.
+
+Features:
+Zero-Shot Classification: Classify texts into predefined categories without training on labeled data.
+One-Shot Classification: Classify texts using a single example as context.
+Chain of Thought Reasoning: Generate a reasoning process for a given text using a text generation model.
+
+Prerequisites:
+Python 3.x
+Required Python libraries: transformers, torch
+
+Zero-Shot Classification:
+This script classifies texts into predefined categories using a zero-shot classification model (facebook/bart-large-mnli).
+The model can predict labels such as "positive," "negative," or "neutral" for any given text without requiring specific training.
+
+One-Shot Classification:
+This script classifies texts using a one-shot example. It uses a single labeled example to help guide the classification of new texts.
+
+Chain of Thought Reasoning:
+This script uses a text generation model (openai-community/gpt2) to generate a reasoning process for given texts. It follows a template to break down the reasoning steps.
