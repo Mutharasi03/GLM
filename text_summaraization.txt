@@ -1,0 +1,39 @@
+# Text Processing and Summarization
+
+This project demonstrates how to process and summarize text data using various techniques. The program includes functionalities for web scraping, text preprocessing, and summarization using both extractive and abstractive methods.
+
+## Features
+
+- **Web Scraping**: Fetch text data from specified URLs using BeautifulSoup.
+- **Text Preprocessing**: Clean and preprocess text data, including tokenization, lemmatization, and removal of stopwords.
+- **Extractive Summarization**: Use TF-IDF and cosine similarity to extract the most relevant sentences from the text.
+- **Abstractive Summarization**: Use a pre-trained T5 model to generate a summary of the text.
+- **Evaluation**: Evaluate the quality of the generated summaries using ROUGE metrics.
+
+## Requirements
+
+- Python 3.x
+- Pandas
+- NLTK
+- Gensim
+- scikit-learn
+- numpy
+- requests
+- BeautifulSoup4
+- transformers
+- rouge-score
+
+Fetch Data from URLs:
+The provided URLs are used to scrape text content from web pages. Modify the urls list to include the URLs you want to scrape.
+
+Text Preprocessing:
+Clean and preprocess the scraped text data. This includes converting text to lowercase, removing punctuation and numbers, and lemmatizing words.
+
+Extractive Summarization:
+Use TF-IDF and cosine similarity to extract the most relevant sentences from the text. This approach identifies and selects key sentences based on their importance.
+
+Abstractive Summarization:
+Generate an abstractive summary using the T5 model from Hugging Face. This approach uses a pre-trained model to create a summary that may include new phrasing or insights.
+
+Evaluation:
+Evaluate the quality of the generated summary using ROUGE metrics to measure how well it matches a reference summary.
